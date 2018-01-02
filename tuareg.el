@@ -1139,7 +1139,7 @@ Regexp match data 0 points to the chars."
 (if tuareg-mode-abbrev-table ()
   (define-abbrev-table 'tuareg-mode-abbrev-table
     (mapcar (lambda (keyword)
-              `(,keyword ,keyword tuareg-abbrev-hook nil t))
+              `(,keyword ,keyword))
             tuareg-electric-indent-keywords)))
 
 (defun tuareg--electric-indent-predicate (char)
